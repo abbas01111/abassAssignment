@@ -80,18 +80,46 @@ fun main() {
 
 
 // Define a class Car with properties brand, model, and year. Add a function displayDetails() that prints the car details. Create at least two objects of this class.
-class Car(val brand: String, val model: String, val year: Int) {
-    fun displayDetails() {
-        println("Car Details: $year $brand $model")
+//class Car(val brand: String, val model: String, val year: Int) {
+//    fun displayDetails() {
+//        println("Car Details: $year $brand $model")
+//    }
+//}
+//
+//fun main() {
+//    // Creating two Car objects
+//    val car1 = Car("Toyota", "Camry", 2020)
+//    val car2 = Car("Honda", "Civic", 2018)
+//
+//    // Displaying details for both cars
+//    car1.displayDetails()
+//    car2.displayDetails()
+//}
+
+
+
+//Create a map with student names as keys and their scores as values. Print students who scored above 70.
+// Base class
+open class Person(val name: String, val age: Int) {
+    open fun displayDetails() {
+        println("Name: $name")
+        println("Age: $age")
+    }
+}
+
+// Subclass of Person
+class Student(name: String, age: Int, val grade: String) : Person(name, age) {
+    override fun displayDetails() {
+        super.displayDetails()
+        println("Grade: $grade")
     }
 }
 
 fun main() {
-    // Creating two Car objects
-    val car1 = Car("Toyota", "Camry", 2020)
-    val car2 = Car("Honda", "Civic", 2018)
+    val student1 = Student("Alkassim", 50, "B")
+    val student2 = Student("Usman", 70, "A")
 
-    // Displaying details for both cars
-    car1.displayDetails()
-    car2.displayDetails()
+    student1.displayDetails()
+    println()
+    student2.displayDetails()
 }
