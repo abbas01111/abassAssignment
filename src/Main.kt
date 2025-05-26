@@ -126,20 +126,33 @@ fun main() {
 
 
 //Create a map with student names as keys and their scores as values. Print students who scored above 70.
-fun main() {
-    val studentScores = mapOf(
-        "Abass" to 75,
-        "Sikiru" to 56,
-        "Smith" to 80,
-        "ibrahim" to 90,
-        "Zainab" to 45
-    )
+//fun main() {
+//    val studentScores = mapOf(
+//        "Abass" to 75,
+//        "Sikiru" to 56,
+//        "Smith" to 80,
+//        "ibrahim" to 90,
+//        "Zainab" to 45
+//    )
+//
+//    println("Students who scored above 70:")
+//    for ((name, score) in studentScores) {
+//        if (score > 70) {
+//            println("$name scored $score")
+//        }
+//    }
+//}
 
-    println("Students who scored above 70:")
-    for ((name, score) in studentScores) {
-        if (score > 70) {
-            println("$name scored $score")
-        }
-    }
+
+
+
+
+//Write a lambda expression that takes two integers and returns their product. Call it and print the result.
+fun main() {
+    // Lambda expression to calculate product of two integers
+    val multiply = { a: Int, b: Int -> a * b }
+
+    val result = multiply(5, 3)
+    println("Result: $result")
 }
 
