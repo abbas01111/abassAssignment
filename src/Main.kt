@@ -100,26 +100,29 @@ fun main() {
 
 //Create a map with student names as keys and their scores as values. Print students who scored above 70.
 // Base class
-open class Person(val name: String, val age: Int) {
-    open fun displayDetails() {
-        println("Name: $name")
-        println("Age: $age")
-    }
-}
+//open class Person(val name: String, val age: Int) {
+//    open fun displayDetails() {
+//        println("Name: $name")
+//        println("Age: $age")
+//    }
+//}
+//
+//// Subclass of Person
+//class Student(name: String, age: Int, val grade: String) : Person(name, age) {
+//    override fun displayDetails() {
+//        super.displayDetails()
+//        println("Grade: $grade")
+//    }
+//}
+//
+//fun main() {
+//    val student1 = Student("Abass", 50, "B")
+//    val student2 = Student("ibrahim", 70, "A")
+//
+//    student1.displayDetails()
+//    println()
+//    student2.displayDetails()
+//}
 
-// Subclass of Person
-class Student(name: String, age: Int, val grade: String) : Person(name, age) {
-    override fun displayDetails() {
-        super.displayDetails()
-        println("Grade: $grade")
-    }
-}
 
-fun main() {
-    val student1 = Student("Alkassim", 50, "B")
-    val student2 = Student("Usman", 70, "A")
 
-    student1.displayDetails()
-    println()
-    student2.displayDetails()
-}
