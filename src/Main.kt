@@ -17,17 +17,37 @@
 
 //Write a program that checks if a given number is even or odd.
 
-fun main() {
-    print("Enter a number: ")
-    val number = readLine()?.toIntOrNull()
+//fun main() {
+//    print("Enter a number: ")
+//    val number = readLine()?.toIntOrNull()
+//
+//    if (number == null) {
+//        println("Invalid input. Please enter a valid number.")
+//    } else {
+//        if (number % 2 == 0) {
+//            println("$number is an even number.")
+//        } else {
+//            println("$number is an odd number.")
+//        }
+//    }
+//}
 
-    if (number == null) {
-        println("Invalid input. Please enter a valid number.")
-    } else {
-        if (number % 2 == 0) {
-            println("$number is an even number.")
-        } else {
-            println("$number is an odd number.")
+
+//Print numbers from 1 to 10 using a for loop. Then, print only even numbers from 1 to 20.
+fun main() {
+    // Print numbers from 1 to 10
+    println("Numbers from 1 to 10:")
+    for (i in 1..10) {
+        print("$i ")
+    }
+    println()
+
+    // Print even numbers from 1 to 20
+    println("Even numbers from 1 to 20:")
+    for (i in 1..20) {
+        if (i % 2 == 0) {
+            print("$i ")
         }
     }
+    println()
 }
