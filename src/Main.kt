@@ -70,10 +70,28 @@ fun main() {
 
 
 //Create an array of 5 names. Loop through the array and print each name with a greeting.
-fun main() {
-    val names = arrayOf("Abass", "Ibrahim", "Darma", "tijani", "Suraj")
+//fun main() {
+//    val names = arrayOf("Abass", "Ibrahim", "Darma", "tijani", "Suraj")
+//
+//    for (name in names) {
+//        println("Hello, $name")
+//    }
+//}
 
-    for (name in names) {
-        println("Hello, $name")
+
+// Define a class Car with properties brand, model, and year. Add a function displayDetails() that prints the car details. Create at least two objects of this class.
+class Car(val brand: String, val model: String, val year: Int) {
+    fun displayDetails() {
+        println("Car Details: $year $brand $model")
     }
+}
+
+fun main() {
+    // Creating two Car objects
+    val car1 = Car("Toyota", "Camry", 2020)
+    val car2 = Car("Honda", "Civic", 2018)
+
+    // Displaying details for both cars
+    car1.displayDetails()
+    car2.displayDetails()
 }
