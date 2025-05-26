@@ -55,7 +55,7 @@
 
 
 //Write a function sum(a: Int, b: Int): Int that returns the sum of two numbers. Call it with different values and display the result.
-fun sum(a: Int, b: Int): Int {
+/*fun sum(a: Int, b: Int): Int {
     return a + b
 }
 
@@ -64,4 +64,16 @@ fun main() {
     println("Sum of 6 and 4: ${sum(6, 4)}")
     println("Sum of 9 and 20: ${sum(9, 20)}")
 
+}*/
+
+
+
+
+//Create an array of 5 names. Loop through the array and print each name with a greeting.
+fun main() {
+    val names = arrayOf("Abass", "Ibrahim", "Darma", "tijani", "Suraj")
+
+    for (name in names) {
+        println("Hello, $name")
+    }
 }
