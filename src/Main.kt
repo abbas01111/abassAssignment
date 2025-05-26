@@ -34,20 +34,34 @@
 
 
 //Print numbers from 1 to 10 using a for loop. Then, print only even numbers from 1 to 20.
-fun main() {
-    // Print numbers from 1 to 10
-    println("Numbers from 1 to 10:")
-    for (i in 1..10) {
-        print("$i ")
-    }
-    println()
+//fun main() {
+//    // Print numbers from 1 to 10
+//    println("Numbers from 1 to 10:")
+//    for (i in 1..10) {
+//        print("$i ")
+//    }
+//    println()
+//
+//    // Print even numbers from 1 to 20
+//    println("Even numbers from 1 to 20:")
+//    for (i in 1..20) {
+//        if (i % 2 == 0) {
+//            print("$i ")
+//        }
+//    }
+//    println()
+//}
 
-    // Print even numbers from 1 to 20
-    println("Even numbers from 1 to 20:")
-    for (i in 1..20) {
-        if (i % 2 == 0) {
-            print("$i ")
-        }
-    }
-    println()
+
+
+//Write a function sum(a: Int, b: Int): Int that returns the sum of two numbers. Call it with different values and display the result.
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
+
+fun main() {
+    // Call sum with different values and display results
+    println("Sum of 6 and 4: ${sum(6, 4)}")
+    println("Sum of 9 and 20: ${sum(9, 20)}")
+
 }
